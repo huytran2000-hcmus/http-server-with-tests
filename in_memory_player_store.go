@@ -24,3 +24,7 @@ func (i *InMememoryPlayerStore) RecordWin(player string) {
 	defer i.mu.Unlock()
 	i.store[player]++
 }
+
+func (i *InMememoryPlayerStore) GetLeague() []Player {
+	return nil
+}
